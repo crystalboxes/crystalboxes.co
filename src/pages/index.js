@@ -6,32 +6,21 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 import socialIcon from "../components/socialicon"
-
-// const IndexPage = () => (
-//   <Layout>
-//     <SEO title="Home" />
-//     <h1>Hi people</h1>
-//     <p>Welcome to your new Gatsby site.</p>
-//     <p>Now go build something great.</p>
-//     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-//       <Image />
-//     </div>
-//     <Link to="/page-2/">Go to page 2</Link> <br />
-//     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-//   </Layout>
-// )
+import Fade from "react-reveal/Fade"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Crystal Boxes</h1>
-    <p>under construction</p>
-    <div className="social-network-icons">
-      {socialIcon("behance")}
-      {socialIcon("instagram")}
-      {socialIcon("twitter")}
-      {socialIcon("email")}
-    </div>
+    <h1 class="uc-big-title">Crystal Boxes</h1>
+    <Fade left>
+      <div className="uc-social-network-icons">
+        {socialIcon("behance")}
+        {socialIcon("instagram")}
+        {socialIcon("twitter")}
+        {socialIcon("email")}
+      </div>
+    </Fade>
+    <p class="uc-under-construction">under construction</p>
   </Layout>
 )
 

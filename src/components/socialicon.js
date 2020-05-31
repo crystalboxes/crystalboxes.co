@@ -6,7 +6,14 @@ import Tw from "../images/svg/icons/twitter.svg"
 import email from "../images/svg/icons/email.svg"
 
 export default typename => {
-  return React.createElement(
-    { behance: Be, instagram: Ig, twitter: Tw, email: email }[typename]
+  return (
+    <div className="uc-social-network-icon">
+      {" "}
+      <a href="#">
+        {React.createElement(
+          { behance: Be, instagram: Ig, twitter: Tw, email: email }[typename]
+        )}
+      </a>
+    </div>
   )
 }
